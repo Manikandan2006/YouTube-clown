@@ -1,0 +1,254 @@
+.topsidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.leftside{
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+}
+.Hamburger img{
+    width: 50px;
+}
+.Hamburger{
+    margin-top: -3px;
+    margin-left: -2px;
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.Hamburger:hover{
+    background-color: rgba(159, 159, 159, 0.4);
+}
+
+.youtube-logo{
+    margin-left: 15px;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.search-input{
+    
+    height: 40px;
+    width: 500px;
+    font-size: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(197, 197, 197);
+    min-width: 200px;
+}
+
+
+
+
+.midside{
+    
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.search-icon{
+    z-index: 999;
+    cursor: pointer;
+    border: 1px solid rgb(197, 197, 197);
+    margin-left: -1px;
+    width: 60px;
+    height: 40px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.search-icon :hover{
+    z-index: 999;
+    background-color: rgba(159, 159, 159, 0.4);
+}
+
+.search-icon img  {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #e5e5e5;
+    padding: 6px;
+    
+}
+
+
+.voice-search-icon  {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+    border-radius: 50% ;
+    box-sizing: border-box;
+    
+    
+}
+
+.voice-search-icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    padding: 8px;
+    
+}
+
+.voice-search-icon img:hover{
+    background-color: rgba(159, 159, 159, 0.4);
+    
+}
+.fortooltip:hover{
+    opacity: 1;
+    z-index: 999;
+}
+
+.rightside{
+    
+    display: flex;
+    column-gap: 10px;
+    margin-right: 40px ;
+    align-items: center;
+}
+
+.smallprofile{
+    width: 35px;
+    height: 35PX;
+    border-radius: 50%;
+    border: none;
+    margin-left: 20px;
+}
+
+.smallprofile .smallprofile-img{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.upload-button{
+    width: 25px ;
+    height: 25px;
+    border: none;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+.upload-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+.upload-img{
+    padding: 8px;
+    border-radius: 50% ;
+}
+
+.upload-button img:hover{
+    background-color: rgba(159, 159, 159, 0.4);
+    
+}
+
+
+.notify-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+
+.notify-button img{
+    padding: 8px;
+    border-radius: 50% ;
+}
+
+.topnotify{
+    background-color: rgb(217, 32, 32);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 27px;
+    margin-top: 5px;
+}
+
+.notify-button img:hover{
+    background-color: rgba(159, 159, 159, 0.4);
+}
+
+.tooltip{
+    font-size: 13px;
+    background-color: rgba(88, 88, 88, 0.9);
+    padding: 9px 10px;
+    position: absolute;
+    top: 70px;
+    color: white;
+    opacity: 0;
+    user-select: none;
+    visibility: hidden;
+    border-radius: 3px ;
+    white-space: nowrap;
+    z-index: 999;
+    
+}
+
+.voice-search-icon, .search-icon, .upload-button, .notify-button{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.voice-search-icon:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    z-index: 999;
+    
+}
+
+.search-icon:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    z-index: 999;
+    
+    
+}
+
+.upload-button:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    z-index: 999;
+    
+}
+
+.notify-button:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+    z-index: 999;   
+    
+}
